@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="SpikeyMcSpikerson" customModuleProvider="target">
             <connections>
+                <outlet property="textView" destination="9Io-9Q-prL" id="BTx-Wl-dk5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,17 +17,30 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the First View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXy-Q1-DPq">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the First View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXy-Q1-DPq" userLabel="topLabel">
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Waiting for network request..." translatesAutoresizingMaskIntoConstraints="NO" id="9Io-9Q-prL" userLabel="textView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="275" id="4IL-MI-cKV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="LXy-Q1-DPq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CbA-t3-wdN"/>
+                <constraint firstItem="9Io-9Q-prL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="KCV-W1-vxA"/>
+                <constraint firstAttribute="trailing" secondItem="9Io-9Q-prL" secondAttribute="trailing" constant="16" id="WDM-8C-QGB"/>
+                <constraint firstItem="9Io-9Q-prL" firstAttribute="top" secondItem="LXy-Q1-DPq" secondAttribute="bottom" constant="25" id="dC6-iH-2pl"/>
                 <constraint firstItem="LXy-Q1-DPq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="hIu-rg-dUS"/>
+                <constraint firstItem="9Io-9Q-prL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pr4-oO-gNf"/>
             </constraints>
+            <point key="canvasLocation" x="66.5" y="53.5"/>
         </view>
     </objects>
 </document>

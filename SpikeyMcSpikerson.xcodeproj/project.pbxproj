@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820DB0402523C3AE348B2DE8 /* Pods_SpikeyMcSpikerson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F62F9074C8A49C64C307B6 /* Pods_SpikeyMcSpikerson.framework */; };
 		940E988F1DB2DC4A00DDD957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E988E1DB2DC4A00DDD957 /* AppDelegate.swift */; };
 		940E98961DB2DC4A00DDD957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940E98951DB2DC4A00DDD957 /* Assets.xcassets */; };
 		940E98A21DB2DE3F00DDD957 /* ApplicationLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E98A01DB2DE3F00DDD957 /* ApplicationLaunchViewController.swift */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5917932C777BA6C4FB3EDF3B /* Pods-SpikeyMcSpikerson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeyMcSpikerson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeyMcSpikerson/Pods-SpikeyMcSpikerson.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8AE09C7AC42CCDD6E2D9C6 /* Pods-SpikeyMcSpikerson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeyMcSpikerson.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeyMcSpikerson/Pods-SpikeyMcSpikerson.release.xcconfig"; sourceTree = "<group>"; };
 		940E988B1DB2DC4A00DDD957 /* SpikeyMcSpikerson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpikeyMcSpikerson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940E988E1DB2DC4A00DDD957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		940E98951DB2DC4A00DDD957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		943F21F11DB3010E00491B90 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		943F21F41DB3014F00491B90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		943F21F51DB3014F00491B90 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		B8F62F9074C8A49C64C307B6 /* Pods_SpikeyMcSpikerson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpikeyMcSpikerson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820DB0402523C3AE348B2DE8 /* Pods_SpikeyMcSpikerson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				940E988D1DB2DC4A00DDD957 /* SpikeyMcSpikerson */,
 				940E988C1DB2DC4A00DDD957 /* Products */,
+				A46A6F3132D9C2004D52DC66 /* Pods */,
+				ECBA4832D9B9B802D8CA70CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,23 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		A46A6F3132D9C2004D52DC66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5917932C777BA6C4FB3EDF3B /* Pods-SpikeyMcSpikerson.debug.xcconfig */,
+				7F8AE09C7AC42CCDD6E2D9C6 /* Pods-SpikeyMcSpikerson.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECBA4832D9B9B802D8CA70CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8F62F9074C8A49C64C307B6 /* Pods_SpikeyMcSpikerson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940E989D1DB2DC4A00DDD957 /* Build configuration list for PBXNativeTarget "SpikeyMcSpikerson" */;
 			buildPhases = (
+				7A35899225F675AFD47851FA /* [CP] Check Pods Manifest.lock */,
 				940E98871DB2DC4A00DDD957 /* Sources */,
 				940E98881DB2DC4A00DDD957 /* Frameworks */,
 				940E98891DB2DC4A00DDD957 /* Resources */,
+				9FAD300A33257BEA9B35FC49 /* [CP] Embed Pods Frameworks */,
+				23F1BD561C61AB72C2CAA364 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23F1BD561C61AB72C2CAA364 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeyMcSpikerson/Pods-SpikeyMcSpikerson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A35899225F675AFD47851FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAD300A33257BEA9B35FC49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeyMcSpikerson/Pods-SpikeyMcSpikerson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		940E98871DB2DC4A00DDD957 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -202,6 +277,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -252,6 +328,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -279,7 +356,9 @@
 		};
 		940E989E1DB2DC4A00DDD957 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5917932C777BA6C4FB3EDF3B /* Pods-SpikeyMcSpikerson.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpikeyMcSpikerson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -291,7 +370,9 @@
 		};
 		940E989F1DB2DC4A00DDD957 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8AE09C7AC42CCDD6E2D9C6 /* Pods-SpikeyMcSpikerson.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpikeyMcSpikerson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
