@@ -8,14 +8,41 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplicationLaunchViewController" customModule="SpikeyMcSpikerson" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="loadingCircle" destination="mDd-pt-BU5" id="mHX-Xt-yX4"/>
+                <outlet property="view" destination="NSN-2j-YtC" id="BE7-bI-bvC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="NSN-2j-YtC">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spikey McSpikerson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc7-Id-4MZ">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taco" translatesAutoresizingMaskIntoConstraints="NO" id="dzf-oM-kke">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="396" id="Hvi-8T-1JG"/>
+                        <constraint firstAttribute="width" constant="306" id="NzI-vt-d3d"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mDd-pt-BU5"/>
+            </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yc7-Id-4MZ" firstAttribute="top" secondItem="NSN-2j-YtC" secondAttribute="top" constant="120" id="DB1-4D-vAt"/>
+                <constraint firstItem="yc7-Id-4MZ" firstAttribute="centerX" secondItem="NSN-2j-YtC" secondAttribute="centerX" id="KBT-kA-V1w"/>
+                <constraint firstItem="mDd-pt-BU5" firstAttribute="top" secondItem="dzf-oM-kke" secondAttribute="bottom" constant="7.5" id="KkU-KC-D3Y"/>
+                <constraint firstItem="mDd-pt-BU5" firstAttribute="centerX" secondItem="NSN-2j-YtC" secondAttribute="centerX" id="chf-lQ-KvV"/>
+                <constraint firstItem="dzf-oM-kke" firstAttribute="top" secondItem="yc7-Id-4MZ" secondAttribute="bottom" constant="8" id="rNQ-6p-BbX"/>
+                <constraint firstItem="dzf-oM-kke" firstAttribute="centerX" secondItem="NSN-2j-YtC" secondAttribute="centerX" id="vHg-f9-oJS"/>
+            </constraints>
+            <point key="canvasLocation" x="-81" y="18"/>
         </view>
     </objects>
+    <resources>
+        <image name="taco" width="612" height="792"/>
+    </resources>
 </document>

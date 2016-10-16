@@ -1,18 +1,11 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewControllerDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Using old school way to launch application without a storyboard
-        
-        let applicationViewController = ApplicationLaunchViewController()
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
-        self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = applicationViewController
+        setupApplication()
         
         return true
     }
@@ -37,6 +30,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    // MARK: <ApplicationLaunchViewControllerDelegate
+    
+    func applicationLaunchViewControllerDidFinish() {
+        // now that the application launch view controller is done doing it's thing, let's start up the application
+        startupApplication()
+    }
+    
+    // MARK: Private Methods
+    
+    func setupApplication() {
+        // Using old school way to launch application without a storyboard
+        
+        let applicationViewController = ApplicationLaunchViewController()
+        applicationViewController.delegate = self
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
+        self.window?.rootViewController = applicationViewController
+    }
+    
+    func startupApplication() {
+        let firstViewController = FirstViewController()
+        let secondViewController = SecondViewController()
+        let thirdViewController = ThirdViewController()
+        
+        let applicationTabBarController = UITabBarController()
+        applicationTabBarController.viewControllers = [firstViewController, secondViewController, thirdViewController]
+        applicationTabBarController.customizableViewControllers = nil
+        
+        self.window?.rootViewController = applicationTabBarController
     }
 }
 
