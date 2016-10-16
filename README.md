@@ -1,6 +1,6 @@
 # SpikeyMcSpikerson
 
-I'm tired of always web searching for junk I've done a million times.
+I'm tired of always web searching for junk I've done a million times.  It would also be helpful to have a project available to perform experiments on in a clean isolated environment.
 
 Time to keep some sort of a record...
 
