@@ -2,7 +2,11 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewControllerDelegate {
+    // MARK: Public Properties
+    
     var window: UIWindow?
+    
+    // MARK: <UIApplicationDelegate>
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupApplication()
@@ -41,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewCont
     
     // MARK: Private Methods
     
-    func setupApplication() {
+    private func setupApplication() {
         // Using old school way to launch application without a storyboard
         
         let applicationViewController = ApplicationLaunchViewController()
@@ -53,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewCont
         self.window?.rootViewController = applicationViewController
     }
     
-    func startupApplication() {
+    private func startupApplication() {
         let firstViewController = FirstViewController()
         let secondViewController = SecondViewController()
         let thirdViewController = ThirdViewController()

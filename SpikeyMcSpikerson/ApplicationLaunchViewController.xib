@@ -8,7 +8,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplicationLaunchViewController" customModule="SpikeyMcSpikerson" customModuleProvider="target">
             <connections>
-                <outlet property="loadingCircle" destination="mDd-pt-BU5" id="mHX-Xt-yX4"/>
                 <outlet property="view" destination="NSN-2j-YtC" id="BE7-bI-bvC"/>
             </connections>
         </placeholder>

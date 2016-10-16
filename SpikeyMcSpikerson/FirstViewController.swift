@@ -4,7 +4,7 @@ import Alamofire
 class FirstViewController: UIViewController {
     // MARK: IBOutlets
     
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet private weak var textView: UITextView!
     
     // MARK: Init Methods
     

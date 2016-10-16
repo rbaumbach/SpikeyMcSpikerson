@@ -11,9 +11,11 @@ protocol ApplicationLaunchViewControllerDelegate: class {
 }
 
 class ApplicationLaunchViewController: UIViewController {
-    @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
+    // MARK: Public Properties
     
     weak var delegate:ApplicationLaunchViewControllerDelegate?
+    
+    // MARK: View Lifecycle
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -25,9 +27,12 @@ class ApplicationLaunchViewController: UIViewController {
         delegate?.applicationLaunchViewControllerDidFinish()
     }
     
+    // MARK: Private Methods
+    
     func handleApplicationLaunchItems() {
         // handle all your work items here instead of app delegate
-        // ex: setup Crashlytics, analytics, 3rd party tools
-        // or anything that takes an extended amount of time
+        // ex: setup Crashlytics, analytics, 3rd party tools, data migrations
+        // or anything that takes an extended amount of time that you need to be handled
+        // before the application starts up
     }
 }
