@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671D2068257C3736C4267542 /* Pods_SpikeyMcSpikersonSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F50040DF8DCD4697922011A /* Pods_SpikeyMcSpikersonSpecs.framework */; };
 		820DB0402523C3AE348B2DE8 /* Pods_SpikeyMcSpikerson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F62F9074C8A49C64C307B6 /* Pods_SpikeyMcSpikerson.framework */; };
 		940E988F1DB2DC4A00DDD957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E988E1DB2DC4A00DDD957 /* AppDelegate.swift */; };
 		940E98961DB2DC4A00DDD957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940E98951DB2DC4A00DDD957 /* Assets.xcassets */; };
@@ -19,7 +20,18 @@
 		943F21F31DB3010E00491B90 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 943F21F11DB3010E00491B90 /* SecondViewController.xib */; };
 		943F21F61DB3014F00491B90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943F21F41DB3014F00491B90 /* ThirdViewController.swift */; };
 		943F21F71DB3014F00491B90 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 943F21F51DB3014F00491B90 /* ThirdViewController.xib */; };
+		94D2BBC51DB4095600C16EB1 /* JunkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2BBC41DB4095600C16EB1 /* JunkSpec.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94D2BBC71DB4095600C16EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 940E98831DB2DC4A00DDD957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 940E988A1DB2DC4A00DDD957;
+			remoteInfo = SpikeyMcSpikerson;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5917932C777BA6C4FB3EDF3B /* Pods-SpikeyMcSpikerson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeyMcSpikerson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeyMcSpikerson/Pods-SpikeyMcSpikerson.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,7 +49,13 @@
 		943F21F11DB3010E00491B90 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		943F21F41DB3014F00491B90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		943F21F51DB3014F00491B90 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		94D2BBC21DB4095600C16EB1 /* SpikeyMcSpikersonSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpikeyMcSpikersonSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2BBC41DB4095600C16EB1 /* JunkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunkSpec.swift; sourceTree = "<group>"; };
+		94D2BBC61DB4095600C16EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F50040DF8DCD4697922011A /* Pods_SpikeyMcSpikersonSpecs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpikeyMcSpikersonSpecs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F62F9074C8A49C64C307B6 /* Pods_SpikeyMcSpikerson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpikeyMcSpikerson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F32207DAECD68FA18EF2E6 /* Pods-SpikeyMcSpikersonSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeyMcSpikersonSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeyMcSpikersonSpecs/Pods-SpikeyMcSpikersonSpecs.release.xcconfig"; sourceTree = "<group>"; };
+		F7FCCD4A656ED3BD0E51D71E /* Pods-SpikeyMcSpikersonSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpikeyMcSpikersonSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpikeyMcSpikersonSpecs/Pods-SpikeyMcSpikersonSpecs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94D2BBBF1DB4095600C16EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D2068257C3736C4267542 /* Pods_SpikeyMcSpikersonSpecs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				940E988D1DB2DC4A00DDD957 /* SpikeyMcSpikerson */,
+				94D2BBC31DB4095600C16EB1 /* SpikeyMcSpikersonSpecs */,
 				940E988C1DB2DC4A00DDD957 /* Products */,
 				A46A6F3132D9C2004D52DC66 /* Pods */,
 				ECBA4832D9B9B802D8CA70CF /* Frameworks */,
@@ -66,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				940E988B1DB2DC4A00DDD957 /* SpikeyMcSpikerson.app */,
+				94D2BBC21DB4095600C16EB1 /* SpikeyMcSpikersonSpecs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,14 +101,9 @@
 		940E988D1DB2DC4A00DDD957 /* SpikeyMcSpikerson */ = {
 			isa = PBXGroup;
 			children = (
-				943F21EA1DB2FC3F00491B90 /* FirstViewController.swift */,
-				943F21EB1DB2FC3F00491B90 /* FirstViewController.xib */,
-				943F21F01DB3010E00491B90 /* SecondViewController.swift */,
-				943F21F11DB3010E00491B90 /* SecondViewController.xib */,
-				943F21F41DB3014F00491B90 /* ThirdViewController.swift */,
-				943F21F51DB3014F00491B90 /* ThirdViewController.xib */,
-				943F21E41DB2F33B00491B90 /* AppLaunch */,
 				943F21E51DB2F34D00491B90 /* Resources */,
+				943F21E41DB2F33B00491B90 /* AppLaunch */,
+				947CFF301DB48B3D009C342C /* Main Application */,
 			);
 			path = SpikeyMcSpikerson;
 			sourceTree = "<group>";
@@ -105,11 +128,35 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		947CFF301DB48B3D009C342C /* Main Application */ = {
+			isa = PBXGroup;
+			children = (
+				943F21EA1DB2FC3F00491B90 /* FirstViewController.swift */,
+				943F21EB1DB2FC3F00491B90 /* FirstViewController.xib */,
+				943F21F01DB3010E00491B90 /* SecondViewController.swift */,
+				943F21F11DB3010E00491B90 /* SecondViewController.xib */,
+				943F21F41DB3014F00491B90 /* ThirdViewController.swift */,
+				943F21F51DB3014F00491B90 /* ThirdViewController.xib */,
+			);
+			name = "Main Application";
+			sourceTree = "<group>";
+		};
+		94D2BBC31DB4095600C16EB1 /* SpikeyMcSpikersonSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				94D2BBC41DB4095600C16EB1 /* JunkSpec.swift */,
+				94D2BBC61DB4095600C16EB1 /* Info.plist */,
+			);
+			path = SpikeyMcSpikersonSpecs;
+			sourceTree = "<group>";
+		};
 		A46A6F3132D9C2004D52DC66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				5917932C777BA6C4FB3EDF3B /* Pods-SpikeyMcSpikerson.debug.xcconfig */,
 				7F8AE09C7AC42CCDD6E2D9C6 /* Pods-SpikeyMcSpikerson.release.xcconfig */,
+				F7FCCD4A656ED3BD0E51D71E /* Pods-SpikeyMcSpikersonSpecs.debug.xcconfig */,
+				D8F32207DAECD68FA18EF2E6 /* Pods-SpikeyMcSpikersonSpecs.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -118,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				B8F62F9074C8A49C64C307B6 /* Pods_SpikeyMcSpikerson.framework */,
+				9F50040DF8DCD4697922011A /* Pods_SpikeyMcSpikersonSpecs.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,6 +193,27 @@
 			productReference = 940E988B1DB2DC4A00DDD957 /* SpikeyMcSpikerson.app */;
 			productType = "com.apple.product-type.application";
 		};
+		94D2BBC11DB4095600C16EB1 /* SpikeyMcSpikersonSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D2BBC91DB4095600C16EB1 /* Build configuration list for PBXNativeTarget "SpikeyMcSpikersonSpecs" */;
+			buildPhases = (
+				7BFCFE661CEEFDB176A0C7B6 /* [CP] Check Pods Manifest.lock */,
+				94D2BBBE1DB4095600C16EB1 /* Sources */,
+				94D2BBBF1DB4095600C16EB1 /* Frameworks */,
+				94D2BBC01DB4095600C16EB1 /* Resources */,
+				EC0B2ADEE42419E5933BDB23 /* [CP] Embed Pods Frameworks */,
+				82FEA18FE2D12CB705138F33 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D2BBC81DB4095600C16EB1 /* PBXTargetDependency */,
+			);
+			name = SpikeyMcSpikersonSpecs;
+			productName = SpikeyMcSpikersonSpecs;
+			productReference = 94D2BBC21DB4095600C16EB1 /* SpikeyMcSpikersonSpecs.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,6 +227,11 @@
 					940E988A1DB2DC4A00DDD957 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+					};
+					94D2BBC11DB4095600C16EB1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 940E988A1DB2DC4A00DDD957;
 					};
 				};
 			};
@@ -175,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				940E988A1DB2DC4A00DDD957 /* SpikeyMcSpikerson */,
+				94D2BBC11DB4095600C16EB1 /* SpikeyMcSpikersonSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +265,13 @@
 				940E98A31DB2DE3F00DDD957 /* ApplicationLaunchViewController.xib in Resources */,
 				943F21ED1DB2FC3F00491B90 /* FirstViewController.xib in Resources */,
 				943F21F31DB3010E00491B90 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2BBC01DB4095600C16EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +308,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		7BFCFE661CEEFDB176A0C7B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82FEA18FE2D12CB705138F33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeyMcSpikersonSpecs/Pods-SpikeyMcSpikersonSpecs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9FAD300A33257BEA9B35FC49 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +351,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeyMcSpikerson/Pods-SpikeyMcSpikerson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0B2ADEE42419E5933BDB23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpikeyMcSpikersonSpecs/Pods-SpikeyMcSpikersonSpecs-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -256,7 +383,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94D2BBBE1DB4095600C16EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2BBC51DB4095600C16EB1 /* JunkSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94D2BBC81DB4095600C16EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 940E988A1DB2DC4A00DDD957 /* SpikeyMcSpikerson */;
+			targetProxy = 94D2BBC71DB4095600C16EB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		940E989B1DB2DC4A00DDD957 /* Debug */ = {
@@ -358,7 +501,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5917932C777BA6C4FB3EDF3B /* Pods-SpikeyMcSpikerson.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpikeyMcSpikerson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -372,13 +515,41 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F8AE09C7AC42CCDD6E2D9C6 /* Pods-SpikeyMcSpikerson.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpikeyMcSpikerson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spikah.SpikeyMcSpikerson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		94D2BBCA1DB4095600C16EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FCCD4A656ED3BD0E51D71E /* Pods-SpikeyMcSpikersonSpecs.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpikeyMcSpikersonSpecs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spikah.SpikeyMcSpikersonSpecs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpikeyMcSpikerson.app/SpikeyMcSpikerson";
+			};
+			name = Debug;
+		};
+		94D2BBCB1DB4095600C16EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F32207DAECD68FA18EF2E6 /* Pods-SpikeyMcSpikersonSpecs.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpikeyMcSpikersonSpecs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spikah.SpikeyMcSpikersonSpecs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpikeyMcSpikerson.app/SpikeyMcSpikerson";
 			};
 			name = Release;
 		};
@@ -399,6 +570,15 @@
 			buildConfigurations = (
 				940E989E1DB2DC4A00DDD957 /* Debug */,
 				940E989F1DB2DC4A00DDD957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D2BBC91DB4095600C16EB1 /* Build configuration list for PBXNativeTarget "SpikeyMcSpikersonSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D2BBCA1DB4095600C16EB1 /* Debug */,
+				94D2BBCB1DB4095600C16EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

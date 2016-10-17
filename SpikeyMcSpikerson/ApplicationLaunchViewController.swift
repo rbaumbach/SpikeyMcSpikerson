@@ -33,6 +33,6 @@ class ApplicationLaunchViewController: UIViewController {
         // handle all your work items here instead of app delegate
         // ex: setup Crashlytics, analytics, 3rd party tools, data migrations
         // or anything that takes an extended amount of time that you need to be handled
-        // before the application starts up
+        // before the application starts up (synchronously)
     }
 }
