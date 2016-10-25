@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="SpikeyMcSpikerson" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="PpR-Ep-jQR" id="wUw-iQ-iiy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,12 +22,30 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PpR-Ep-jQR" userLabel="collectionView">
+                    <color key="backgroundColor" red="0.62534329987172255" green="0.80497148433727495" blue="0.8424951424870466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="IBb-hA-PLu">
+                        <size key="itemSize" width="100" height="100"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="O0d-lu-xYb"/>
+                        <outlet property="delegate" destination="-1" id="KJy-FP-24R"/>
+                    </connections>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="PpR-Ep-jQR" secondAttribute="trailing" id="Aem-Bn-pTQ"/>
+                <constraint firstItem="PpR-Ep-jQR" firstAttribute="top" secondItem="r19-Of-GPS" secondAttribute="bottom" constant="10" id="LL8-T2-Pc9"/>
+                <constraint firstAttribute="bottom" secondItem="PpR-Ep-jQR" secondAttribute="bottom" constant="10" id="LUf-gO-hyy"/>
                 <constraint firstItem="r19-Of-GPS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="M5w-yS-gJH"/>
+                <constraint firstItem="PpR-Ep-jQR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T9e-52-V9b"/>
                 <constraint firstItem="r19-Of-GPS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g7Q-tx-ChU"/>
             </constraints>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
         </view>
     </objects>
 </document>

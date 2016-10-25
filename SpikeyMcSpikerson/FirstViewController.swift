@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         
-        self.title = "1st"
+        title = "1st"
     }
     
     // MARK: View Lifecycle

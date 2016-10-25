@@ -13,6 +13,6 @@ class ThirdViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         
-        self.title = "3rd"
+        title = "3rd"
     }
 }
