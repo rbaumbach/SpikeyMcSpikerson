@@ -61,9 +61,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewCont
         let firstViewController = FirstViewController()
         let secondViewController = SecondViewController()
         let thirdViewController = ThirdViewController()
+        let forthViewController = FourthViewController()
         
         let applicationTabBarController = UITabBarController()
-        applicationTabBarController.viewControllers = [firstViewController, secondViewController, thirdViewController]
+        applicationTabBarController.viewControllers = [firstViewController, secondViewController, thirdViewController, forthViewController]
         applicationTabBarController.customizableViewControllers = nil
         
         self.window?.rootViewController = applicationTabBarController

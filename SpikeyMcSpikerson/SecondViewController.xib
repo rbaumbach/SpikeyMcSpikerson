@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -39,7 +39,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="PpR-Ep-jQR" secondAttribute="trailing" id="Aem-Bn-pTQ"/>
-                <constraint firstItem="PpR-Ep-jQR" firstAttribute="top" secondItem="r19-Of-GPS" secondAttribute="bottom" constant="10" id="LL8-T2-Pc9"/>
+                <constraint firstItem="PpR-Ep-jQR" firstAttribute="top" secondItem="r19-Of-GPS" secondAttribute="bottom" constant="25" id="LL8-T2-Pc9"/>
                 <constraint firstAttribute="bottom" secondItem="PpR-Ep-jQR" secondAttribute="bottom" constant="10" id="LUf-gO-hyy"/>
                 <constraint firstItem="r19-Of-GPS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="M5w-yS-gJH"/>
                 <constraint firstItem="PpR-Ep-jQR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T9e-52-V9b"/>
