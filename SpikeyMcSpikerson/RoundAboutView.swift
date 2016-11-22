@@ -9,31 +9,38 @@ class RoundAboutView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     
     let RoundAboutCollectionViewCellIdentifier = "RoundAboutCollectionViewCell"
     
-    // MARK: Private Properties
-    
-    let imageDataSource = ["cube", "frog", "rubix", "squirrel-guy", "steak", "taco", "work"]
-    
     // MARK: IBOutlets
     
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
+    @IBOutlet private weak var pageControl: UIPageControl!
+    
+    // MARK: Private Properties
+    
+    let imageDataSource = ["cube", "frog", "rubix", "squirrel-guy", "steak", "taco", "work"]
     
     // MARK: Init Methods
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setupView()
-        setupCollectionView()
+        startMeUp()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        setupView()
-        setupCollectionView()
+        startMeUp()
+    }
+    
+    // MARK: UIView
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
-        print("Collection View frame: \(collectionView.frame)")
+        let totalSize = CGSize(width: self.bounds.size.width, height: self.bounds.size.height)
+        
+        collectionViewFlowLayout.itemSize = totalSize
     }
     
     // MARK: Public Properties
@@ -62,7 +69,30 @@ class RoundAboutView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         delegate?.didTapRoundAboutView(atIndex: indexPath.row)
     }
     
+    // MARK: <UIScrollViewDelegate>
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print("Scroll view did end decelerating")
+        
+        print("center of collection view: \(collectionView.center)")
+
+        let centerPoint = CGPoint(x: collectionView.frame.size.width / 2 + scrollView.contentOffset.x, y: collectionView.frame.size.height / 2 + scrollView.contentOffset.y);
+        print("center Points!!!: \(centerPoint)")
+        
+        let shownCellIndexPath = collectionView.indexPathForItem(at: centerPoint)
+
+        print("IndexPath of center of collection view: \(shownCellIndexPath))")
+        
+        pageControl.currentPage = shownCellIndexPath!.row
+    }
+    
     // MARK: Private Methods
+    
+    private func startMeUp() {
+        setupView()
+        setupCollectionView()
+        setupPageControl()
+    }
     
     private func setupView() {
         let view = loadViewFromNib()
@@ -90,5 +120,11 @@ class RoundAboutView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         
         let roundAboutCollectionViewCellNib = UINib(nibName: RoundAboutCollectionViewCellIdentifier, bundle: nil)
         collectionView.register(roundAboutCollectionViewCellNib, forCellWithReuseIdentifier: RoundAboutCollectionViewCellIdentifier)
+    }
+    
+    private func setupPageControl() {
+        pageControl.numberOfPages = imageDataSource.count
+        pageControl.pageIndicatorTintColor = .yellow
+        pageControl.currentPageIndicatorTintColor = .black
     }
 }
