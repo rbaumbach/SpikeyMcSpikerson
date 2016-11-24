@@ -63,8 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewCont
         let thirdViewController = ThirdViewController()
         let forthViewController = FourthViewController()
         
+        let fifStoryboard = UIStoryboard(name: "FifStoryboard", bundle: nil)
+        let fifStoryboardRootViewController = fifStoryboard.instantiateInitialViewController()
+        
         let applicationTabBarController = UITabBarController()
-        applicationTabBarController.viewControllers = [firstViewController, secondViewController, thirdViewController, forthViewController]
+        applicationTabBarController.viewControllers = [firstViewController, secondViewController, thirdViewController, forthViewController, fifStoryboardRootViewController!]
         applicationTabBarController.customizableViewControllers = nil
         
         self.window?.rootViewController = applicationTabBarController
