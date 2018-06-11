@@ -1,5 +1,8 @@
 import UIKit
 
+// This entire view is a bad idea, it really should be a View Controller.  We shouldn't have a view be a delegate to one it's subviews.  This breaks
+// the MVC pattern.
+
 protocol RoundAboutViewDelegate {
     func didTapRoundAboutView(atIndex: Int)
 }
@@ -37,6 +40,8 @@ class RoundAboutView: UIView, UICollectionViewDataSource, UICollectionViewDelega
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        // This is bad, use UICollectionViewDelegateFlowLayout instead =(
         
         let totalSize = CGSize(width: self.bounds.size.width, height: self.bounds.size.height)
         
@@ -81,7 +86,7 @@ class RoundAboutView: UIView, UICollectionViewDataSource, UICollectionViewDelega
         
         let shownCellIndexPath = collectionView.indexPathForItem(at: centerPoint)
 
-        print("IndexPath of center of collection view: \(shownCellIndexPath))")
+        print("IndexPath of center of collection view: \(shownCellIndexPath!))")
         
         pageControl.currentPage = shownCellIndexPath!.row
     }

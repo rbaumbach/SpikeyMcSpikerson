@@ -42,6 +42,8 @@ import UIKit
         
         addSubview(view)
         
+        // use layout anchors instead
+        
         let visualFormatViewsDict = ["view": view]
         
         let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",

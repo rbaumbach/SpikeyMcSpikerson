@@ -57,9 +57,9 @@ class FirstViewController: UIViewController {
     private func printReponse(response: DataResponse<Any>) {
             debugPrint(response)     // print everything
 
-            print(response.request)  // original URL request
-            print(response.response) // URL response
-            print(response.data)     // server data
+            print(response.request!)  // original URL request
+            print(response.response!) // URL response
+            print(response.data!)     // server data
             print(response.result)   // result of response serialization
     }
     

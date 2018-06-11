@@ -7,10 +7,10 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'SpikeyMcSpikerson' do
-    pod 'Alamofire', '~> 4.0'
+    pod 'Alamofire'
 end
 
 target 'SpikeyMcSpikersonSpecs' do
-    pod 'Quick', '~> 0.10.0'
-    pod 'Nimble', '~> 5.0'
+    pod 'Quick'
+    pod 'Nimble'
 end
