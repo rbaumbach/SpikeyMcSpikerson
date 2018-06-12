@@ -10,9 +10,10 @@ class FirstViewController: UIViewController {
     
     // if you implement the init() method for the view controller, you must implement the required init method
     // for coder junk
-    // I know that I'm not going to be loading this from a storyboard, so lets do nothing
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder aDecoder: NSCoder) {        
+        super.init(coder: aDecoder)
+        
+        title = "1st"
     }
     
     init() {

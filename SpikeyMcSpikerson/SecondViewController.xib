@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,11 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r19-Of-GPS">
+                    <rect key="frame" x="56.5" y="50" width="262.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PpR-Ep-jQR" userLabel="collectionView">
+                    <rect key="frame" x="0.0" y="95.5" width="375" height="571.5"/>
                     <color key="backgroundColor" red="0.62534329987172255" green="0.80497148433727495" blue="0.8424951424870466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="IBb-hA-PLu">
                         <size key="itemSize" width="100" height="100"/>
@@ -40,7 +45,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="PpR-Ep-jQR" secondAttribute="trailing" id="Aem-Bn-pTQ"/>
                 <constraint firstItem="PpR-Ep-jQR" firstAttribute="top" secondItem="r19-Of-GPS" secondAttribute="bottom" constant="25" id="LL8-T2-Pc9"/>
-                <constraint firstAttribute="bottom" secondItem="PpR-Ep-jQR" secondAttribute="bottom" constant="10" id="LUf-gO-hyy"/>
+                <constraint firstAttribute="bottom" secondItem="PpR-Ep-jQR" secondAttribute="bottom" id="LUf-gO-hyy"/>
                 <constraint firstItem="r19-Of-GPS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="M5w-yS-gJH"/>
                 <constraint firstItem="PpR-Ep-jQR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T9e-52-V9b"/>
                 <constraint firstItem="r19-Of-GPS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g7Q-tx-ChU"/>

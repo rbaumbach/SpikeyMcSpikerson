@@ -58,16 +58,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ApplicationLaunchViewCont
     }
     
     private func startupApplication() {
-        let firstViewController = FirstViewController()
-        let secondViewController = SecondViewController()
-        let thirdViewController = ThirdViewController()
-        let forthViewController = FourthViewController()
-        
-        let fifStoryboard = UIStoryboard(name: "FifStoryboard", bundle: nil)
-        let fifStoryboardRootViewController = fifStoryboard.instantiateInitialViewController()
+        let oldJunkStoryboard = UIStoryboard(name: "OldJunk", bundle: nil)
+        let oldJunkStoryboardRootViewController = oldJunkStoryboard.instantiateInitialViewController()!
         
         let applicationTabBarController = UITabBarController()
-        applicationTabBarController.viewControllers = [firstViewController, secondViewController, thirdViewController, forthViewController, fifStoryboardRootViewController!]
+        applicationTabBarController.viewControllers = [oldJunkStoryboardRootViewController]
         applicationTabBarController.customizableViewControllers = nil
         
         self.window?.rootViewController = applicationTabBarController
